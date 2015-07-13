@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/davidakachaos/werkzaamheden.git
+  revision: c61b6d5c3fa7dbcd90a74990da1a0d557a81353c
+  specs:
+    werkzaamheden (0.1.0)
+      htmlentities
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -109,8 +117,11 @@ GEM
       i18n
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    haml (4.0.6)
+      tilt
     high_voltage (2.3.0)
     highline (1.7.2)
+    htmlentities (4.3.4)
     i18n (0.7.0)
     i18n-tasks (0.8.5)
       activesupport
@@ -283,6 +294,7 @@ DEPENDENCIES
   factory_girl_rails
   flutie
   formulaic
+  haml
   high_voltage
   i18n-tasks
   jquery-rails
@@ -311,6 +323,7 @@ DEPENDENCIES
   unicorn
   web-console
   webmock
+  werkzaamheden!
 
 BUNDLED WITH
    1.10.5
