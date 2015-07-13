@@ -1,0 +1,8 @@
+= simple_form_for(@item) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :title
+    = f.input :content
+    = f.input :publish_at
+  .form-actions
+    = f.button :submit

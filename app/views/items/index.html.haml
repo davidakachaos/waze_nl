@@ -1,0 +1,19 @@
+%h1 Listing Items
+%table.tables
+  %thead
+    %tr
+      %th Title
+      %th Content
+      %th Publish at
+      %th{:colspan => "3"}
+  %tbody
+    - @items.each do |item|
+      %tr
+        %td= item.title
+        %td= item.content
+        %td= item.publish_at
+        %td= link_to 'Show', item
+        %td= link_to 'Edit', edit_item_path(item)
+        %td= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Item', new_item_path
